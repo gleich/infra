@@ -15,3 +15,5 @@ zones:
   mattglei.ch:
     sources:
       - config
+    targets:
+      - cloudflare
