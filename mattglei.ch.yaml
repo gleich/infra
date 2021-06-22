@@ -46,7 +46,7 @@ ssh:
   - type: A
     value: 104.131.104.182
 
-twitter:
+linkedin:
   - type: A
     value: 8.8.8.8
 
