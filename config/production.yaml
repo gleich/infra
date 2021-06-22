@@ -12,9 +12,6 @@ providers:
     token: env/CLOUDFLARE_TOKEN
 
 zones:
-  mattgleich.com:
-    sources:
-      - config
   mattglei.ch:
     sources:
       - config
