@@ -12,7 +12,7 @@ providers:
     token: env/CLOUDFLARE_TOKEN
 
 zones:
-  mattglei.ch:
+  mattglei.ch.:
     sources:
       - config
     targets:
