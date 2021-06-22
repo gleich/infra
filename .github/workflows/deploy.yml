@@ -11,6 +11,7 @@ jobs:
     name: deploy
     steps:
       - uses: actions/checkout@v2
+      - run: cp mattglei.ch.yaml mattgleich.com.yaml
       - uses: actions/setup-python@v2
         with:
           python-version: '3.9'

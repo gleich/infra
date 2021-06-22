@@ -17,3 +17,8 @@ zones:
       - config
     targets:
       - cloudflare
+  mattgleich.com.:
+    sources:
+      - config
+    targets:
+      - cloudflare
