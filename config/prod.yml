@@ -5,7 +5,7 @@ providers:
   config:
     class: octodns.provider.yaml.YamlProvider
     directory: .
-    default_ttl: 3600
+    default_ttl: 1
     enforce_order: false
   cloudflare:
     class: octodns.provider.cloudflare.CloudflareProvider
