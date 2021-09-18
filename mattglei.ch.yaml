@@ -38,10 +38,6 @@ school:
   - type: A
     value: 76.76.21.21
 
-sources:
-  - type: A
-    value: 104.131.104.182
-
 ssh:
   - type: A
     value: 104.131.104.182
