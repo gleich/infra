@@ -30,6 +30,10 @@ links:
   - type: A
     value: 137.184.104.186
 
+socials:
+  - type: A
+    value: 137.184.104.186
+
 old:
   - type: A
     value: 185.199.108.153
