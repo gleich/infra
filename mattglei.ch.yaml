@@ -18,10 +18,6 @@ assignments:
   - type: A
     value: 137.184.104.186
 
-graphql:
-  - type: A
-    value: 137.184.104.186
-
 github:
   - type: A
     value: 8.8.8.8
