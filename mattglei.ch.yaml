@@ -54,6 +54,10 @@ ssh:
   - type: A
     value: 137.184.104.186
 
+cms:
+  - type: A
+    value: 137.184.104.186
+
 linkedin:
   - type: A
     value: 8.8.8.8
