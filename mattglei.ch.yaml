@@ -52,11 +52,11 @@ ghs-store:
 
 ssh:
   - type: A
-    value: 137.184.104.186
+    value: 174.138.35.183
 
 cms:
   - type: A
-    value: 137.184.104.186
+    value: 174.138.35.183
 
 linkedin:
   - type: A
