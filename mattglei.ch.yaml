@@ -14,6 +14,10 @@
   - type: A
     value: 174.138.35.183
 
+documents:
+  - type: A
+    value: 174.138.35.183
+
 assignments:
   - type: A
     value: 174.138.35.183
