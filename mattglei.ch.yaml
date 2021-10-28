@@ -70,6 +70,10 @@ www:
   - type: A
     value: 76.76.21.21
 
+'*.school':
+  - type: A
+    value: 76.76.21.21
+
 kiwi.docs:
   - type: A
     value: 76.76.21.21
