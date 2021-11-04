@@ -82,6 +82,10 @@ from:
   - type: A
     value: 76.76.21.21
 
+svg-animation-test:
+  - type: A
+    value: 76.76.21.21
+
 blackbird:
   - type: A
     value: 76.76.21.21
