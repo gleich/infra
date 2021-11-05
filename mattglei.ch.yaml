@@ -82,7 +82,7 @@ from:
   - type: A
     value: 76.76.21.21
 
-svg-animation-test:
+svg-animation-tester:
   - type: A
     value: 76.76.21.21
 
