@@ -50,6 +50,10 @@ school:
   - type: A
     value: 76.76.21.21
 
+talks:
+  - type: A
+    value: 76.76.21.21
+
 ghs-store:
   - type: A
     value: 76.76.21.21
