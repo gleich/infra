@@ -58,10 +58,6 @@ ghs-store:
   - type: A
     value: 76.76.21.21
 
-ssh:
-  - type: A
-    value: 174.138.35.183
-
 cms:
   - type: A
     value: 174.138.35.183
