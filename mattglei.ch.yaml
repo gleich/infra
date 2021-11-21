@@ -42,10 +42,6 @@ graphql:
   - type: A
     value: 174.138.35.183
 
-old:
-  - type: A
-    value: 185.199.108.153
-
 school:
   - type: A
     value: 76.76.21.21
