@@ -82,6 +82,10 @@ blackbird:
   - type: A
     value: 76.76.21.21
 
+feynman-project:
+  - type: A
+    value: 76.76.21.21
+
 javelin:
   - type: A
     value: 76.76.21.21
