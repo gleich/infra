@@ -3,6 +3,7 @@ resource "cloudflare_record" "mattgleich_root" {
   type    = "A"
   name    = ""
   value   = "76.76.21.21"
+  proxied = true
 }
 
 resource "cloudflare_record" "mattgleich_root_mail_main" {
@@ -26,6 +27,7 @@ resource "cloudflare_record" "mattgleich_api" {
   type    = "A"
   name    = "*.api"
   value   = "174.138.25.183"
+  proxied = true
 }
 
 resource "cloudflare_record" "mattgleich_documents" {
@@ -33,6 +35,7 @@ resource "cloudflare_record" "mattgleich_documents" {
   type    = "A"
   name    = "documents"
   value   = "174.138.25.183"
+  proxied = true
 }
 
 resource "cloudflare_record" "mattgleich_assignments" {
@@ -40,6 +43,7 @@ resource "cloudflare_record" "mattgleich_assignments" {
   type    = "A"
   name    = "assignments"
   value   = "174.138.25.183"
+  proxied = true
 }
 
 resource "cloudflare_record" "mattgleich_github" {
@@ -61,6 +65,7 @@ resource "cloudflare_record" "mattgleich_links" {
   type    = "A"
   name    = "links"
   value   = "174.138.35.183"
+  proxied = true
 }
 
 resource "cloudflare_record" "mattgleich_socials" {
@@ -68,6 +73,7 @@ resource "cloudflare_record" "mattgleich_socials" {
   type    = "A"
   name    = "socials"
   value   = "174.138.35.183"
+  proxied = true
 }
 
 resource "cloudflare_record" "mattgleich_graphql" {
@@ -75,6 +81,7 @@ resource "cloudflare_record" "mattgleich_graphql" {
   type    = "A"
   name    = "graphql"
   value   = "174.138.35.183"
+  proxied = true
 }
 
 resource "cloudflare_record" "mattgleich_wild_school" {
@@ -82,6 +89,7 @@ resource "cloudflare_record" "mattgleich_wild_school" {
   type    = "A"
   name    = "*.school"
   value   = "76.76.21.21"
+  proxied = true
 }
 
 resource "cloudflare_record" "mattgleich_school" {
@@ -89,6 +97,7 @@ resource "cloudflare_record" "mattgleich_school" {
   type    = "A"
   name    = "school"
   value   = "76.76.21.21"
+  proxied = true
 }
 
 resource "cloudflare_record" "mattgleich_ghs_store" {
@@ -96,6 +105,7 @@ resource "cloudflare_record" "mattgleich_ghs_store" {
   type    = "A"
   name    = "ghs-store"
   value   = "76.76.21.21"
+  proxied = true
 }
 
 resource "cloudflare_record" "mattgleich_cms" {
@@ -103,6 +113,7 @@ resource "cloudflare_record" "mattgleich_cms" {
   type    = "A"
   name    = "cms"
   value   = "174.138.35.183"
+  proxied = true
 }
 
 resource "cloudflare_record" "mattgleich_linkedin" {
@@ -117,6 +128,7 @@ resource "cloudflare_record" "mattgleich_www" {
   type    = "A"
   name    = "www"
   value   = "76.76.21.21"
+  proxied = true
 }
 
 resource "cloudflare_record" "mattgleich_kiwi_docs" {
@@ -124,6 +136,7 @@ resource "cloudflare_record" "mattgleich_kiwi_docs" {
   type    = "A"
   name    = "kiwi.docs"
   value   = "76.76.21.21"
+  proxied = true
 }
 
 resource "cloudflare_record" "mattgleich_from" {
@@ -131,6 +144,7 @@ resource "cloudflare_record" "mattgleich_from" {
   type    = "A"
   name    = "from"
   value   = "76.76.21.21"
+  proxied = true
 }
 
 resource "cloudflare_record" "mattgleich_svg_animation_tester" {
@@ -138,6 +152,7 @@ resource "cloudflare_record" "mattgleich_svg_animation_tester" {
   type    = "A"
   name    = "svg-animation-tester"
   value   = "76.76.21.21"
+  proxied = true
 }
 
 resource "cloudflare_record" "mattgleich_blackbird" {
@@ -145,6 +160,7 @@ resource "cloudflare_record" "mattgleich_blackbird" {
   type    = "A"
   name    = "blackbird"
   value   = "76.76.21.21"
+  proxied = true
 }
 
 resource "cloudflare_record" "mattgleich_feynman_project" {
@@ -152,6 +168,7 @@ resource "cloudflare_record" "mattgleich_feynman_project" {
   type    = "A"
   name    = "feynman-project"
   value   = "76.76.21.21"
+  proxied = true
 }
 
 resource "cloudflare_record" "mattgleich_javelin" {
@@ -159,4 +176,5 @@ resource "cloudflare_record" "mattgleich_javelin" {
   type    = "A"
   name    = "javelin"
   value   = "76.76.21.21"
+  proxied = true
 }
