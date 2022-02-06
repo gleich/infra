@@ -11,12 +11,6 @@ jobs:
     name: deploy
     steps:
       - uses: actions/checkout@v2
-      - run: cp mattglei.ch.yaml mattgleich.com.yaml
-      - uses: actions/setup-python@v2
-        with:
-          python-version: '3.9'
-      - uses: snok/install-poetry@v1.1.6
-      - run: poetry install
-      - run: poetry run octodns-sync --config-file=config/prod.yml --doit
-        env:
-          CLOUDFLARE_TOKEN: ${{ secrets.CLOUDFLARE_TOKEN }}
+      - uses: hashicorp/setup-terraform@v1
+      - run: terraform init
+      - run: terraform apply -auto-approve -var="api_token=${{ secrets.CLOUDFLARE_TOKEN }}" -var="zone_id=${{ secrets.MATTGLEICHCOM_ZONE_ID }}"
