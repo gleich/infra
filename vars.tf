@@ -7,10 +7,6 @@ variable "email" {
   type    = string
 }
 
-variable "mattgleich_zone_id" {
-  type = string
-}
-
-variable "mattgleich_com_zone_id" {
+variable "zone_id" {
   type = string
 }
