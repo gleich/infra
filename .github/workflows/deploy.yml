@@ -1,0 +1,16 @@
+name: deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    name: deploy
+    steps:
+      - uses: actions/checkout@v2
+      - uses: hashicorp/setup-terraform@v1
+      - run: terraform init
+      - run: terraform apply -auto-approve -var="api_token=${{ secrets.CLOUDFLARE_TOKEN }}" -var="zone_id=${{ secrets.MATTGLEICHCOM_ZONE_ID }}"
