@@ -27,7 +27,6 @@ resource "cloudflare_record" "mattgleich_com_api" {
   type    = "A"
   name    = "*.api"
   value   = "174.138.25.183"
-  proxied = true
 }
 
 resource "cloudflare_record" "mattgleich_com_documents" {
@@ -89,7 +88,6 @@ resource "cloudflare_record" "mattgleich_com_wild_school" {
   type    = "A"
   name    = "*.school"
   value   = "76.76.21.21"
-  proxied = true
 }
 
 resource "cloudflare_record" "mattgleich_com_school" {
