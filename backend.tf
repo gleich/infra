@@ -3,7 +3,7 @@ terraform {
     organization = "gleich-personal"
 
     workspaces {
-      name = "dns"
+      name = "infra"
     }
   }
 
