@@ -85,24 +85,24 @@ resource "cloudflare_record" "mattgleich_com_graphql" {
 
 resource "cloudflare_record" "mattgleich_com_wild_school" {
   zone_id = var.zone_id_mattgleich_com
-  type    = "A"
+  type    = "CNAME"
   name    = "*.school"
-  value   = "76.76.21.21"
+  value   = var.vercel_cname
 }
 
 resource "cloudflare_record" "mattgleich_com_school" {
   zone_id = var.zone_id_mattgleich_com
-  type    = "A"
+  type    = "CNAME"
   name    = "school"
-  value   = "76.76.21.21"
+  value   = var.vercel_cname
   proxied = true
 }
 
 resource "cloudflare_record" "mattgleich_com_ghs_store" {
   zone_id = var.zone_id_mattgleich_com
-  type    = "A"
+  type    = "CNAME"
   name    = "ghs-store"
-  value   = "76.76.21.21"
+  value   = var.vercel_cname
   proxied = true
 }
 
@@ -123,56 +123,56 @@ resource "cloudflare_record" "mattgleich_com_linkedin" {
 
 resource "cloudflare_record" "mattgleich_com_www" {
   zone_id = var.zone_id_mattgleich_com
-  type    = "A"
+  type    = "CNAME"
   name    = "www"
-  value   = "76.76.21.21"
+  value   = var.vercel_cname
   proxied = true
 }
 
 resource "cloudflare_record" "mattgleich_com_kiwi_docs" {
   zone_id = var.zone_id_mattgleich_com
-  type    = "A"
+  type    = "CNAME"
   name    = "kiwi.docs"
-  value   = "76.76.21.21"
+  value   = var.vercel_cname
   proxied = true
 }
 
 resource "cloudflare_record" "mattgleich_com_from" {
   zone_id = var.zone_id_mattgleich_com
-  type    = "A"
+  type    = "CNAME"
   name    = "from"
-  value   = "76.76.21.21"
+  value   = var.vercel_cname
   proxied = true
 }
 
 resource "cloudflare_record" "mattgleich_com_svg_animation_tester" {
   zone_id = var.zone_id_mattgleich_com
-  type    = "A"
+  type    = "CNAME"
   name    = "svg-animation-tester"
-  value   = "76.76.21.21"
+  value   = var.vercel_cname
   proxied = true
 }
 
 resource "cloudflare_record" "mattgleich_com_blackbird" {
   zone_id = var.zone_id_mattgleich_com
-  type    = "A"
+  type    = "CNAME"
   name    = "blackbird"
-  value   = "76.76.21.21"
+  value   = var.vercel_cname
   proxied = true
 }
 
 resource "cloudflare_record" "mattgleich_com_feynman_project" {
   zone_id = var.zone_id_mattgleich_com
-  type    = "A"
+  type    = "CNAME"
   name    = "feynman-project"
-  value   = "76.76.21.21"
+  value   = var.vercel_cname
   proxied = true
 }
 
 resource "cloudflare_record" "mattgleich_com_javelin" {
   zone_id = var.zone_id_mattgleich_com
-  type    = "A"
+  type    = "CNAME"
   name    = "javelin"
-  value   = "76.76.21.21"
+  value   = var.vercel_cname
   proxied = true
 }

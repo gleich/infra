@@ -14,3 +14,8 @@ variable "zone_id_mattgleich" {
 variable "zone_id_mattgleich_com" {
   type = string
 }
+
+variable "vercel_cname" {
+  type    = string
+  default = "cname.vercel-dns.com."
+}
