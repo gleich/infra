@@ -33,7 +33,6 @@ resource "cloudflare_record" "mattgleich_documents" {
   type    = "A"
   name    = "documents"
   value   = "174.138.25.183"
-  proxied = true
 }
 
 resource "cloudflare_record" "mattgleich_assignments" {
@@ -41,7 +40,6 @@ resource "cloudflare_record" "mattgleich_assignments" {
   type    = "A"
   name    = "assignments"
   value   = "174.138.25.183"
-  proxied = true
 }
 
 resource "cloudflare_record" "mattgleich_github" {
@@ -63,7 +61,6 @@ resource "cloudflare_record" "mattgleich_links" {
   type    = "A"
   name    = "links"
   value   = "174.138.35.183"
-  proxied = true
 }
 
 resource "cloudflare_record" "mattgleich_socials" {
@@ -71,7 +68,6 @@ resource "cloudflare_record" "mattgleich_socials" {
   type    = "A"
   name    = "socials"
   value   = "174.138.35.183"
-  proxied = true
 }
 
 resource "cloudflare_record" "mattgleich_graphql" {
@@ -79,7 +75,6 @@ resource "cloudflare_record" "mattgleich_graphql" {
   type    = "A"
   name    = "graphql"
   value   = "174.138.35.183"
-  proxied = true
 }
 
 resource "cloudflare_record" "mattgleich_wild_school" {
@@ -108,7 +103,6 @@ resource "cloudflare_record" "mattgleich_cms" {
   type    = "A"
   name    = "cms"
   value   = "174.138.35.183"
-  proxied = true
 }
 
 resource "cloudflare_record" "mattgleich_linkedin" {
