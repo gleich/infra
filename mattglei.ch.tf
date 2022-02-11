@@ -105,6 +105,13 @@ resource "cloudflare_record" "mattgleich_cms" {
   value   = "174.138.35.183"
 }
 
+resource "cloudflare_record" "mattgleich_api_captain" {
+  zone_id = var.zone_id_mattgleich
+  type    = "A"
+  name    = "captain.api"
+  value   = "174.138.35.183"
+}
+
 resource "cloudflare_record" "mattgleich_linkedin" {
   zone_id = var.zone_id_mattgleich
   type    = "A"
