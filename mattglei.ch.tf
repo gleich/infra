@@ -126,10 +126,10 @@ resource "cloudflare_record" "mattgleich_www" {
   value   = "76.76.21.21"
 }
 
-resource "cloudflare_record" "mattgleich_kiwi_docs" {
+resource "cloudflare_record" "mattgleich_optic_docs" {
   zone_id = var.zone_id_mattgleich
   type    = "A"
-  name    = "kiwi.docs"
+  name    = "optic.docs"
   value   = "76.76.21.21"
 }
 
