@@ -169,7 +169,7 @@ resource "cloudflare_record" "mattgleich_com_javelin" {
 }
 
 resource "cloudflare_record" "mattgleich_com_daily_poll_website" {
-  zone_id = var.zone_id_mattgleich
+  zone_id = var.zone_id_mattgleich_com
   type    = "A"
   name    = "daily-poll"
   value   = "76.76.21.21"
