@@ -25,21 +25,21 @@ resource "cloudflare_record" "mattgleich_com_api" {
   zone_id = var.zone_id_mattgleich_com
   type    = "A"
   name    = "*.api"
-  value   = "174.138.25.183"
+  value   = "174.138.35.183"
 }
 
 resource "cloudflare_record" "mattgleich_com_documents" {
   zone_id = var.zone_id_mattgleich_com
   type    = "A"
   name    = "documents"
-  value   = "174.138.25.183"
+  value   = "174.138.35.183"
 }
 
 resource "cloudflare_record" "mattgleich_com_assignments" {
   zone_id = var.zone_id_mattgleich_com
   type    = "A"
   name    = "assignments"
-  value   = "174.138.25.183"
+  value   = "174.138.35.183"
 }
 
 resource "cloudflare_record" "mattgleich_com_github" {
