@@ -42,6 +42,13 @@ resource "cloudflare_record" "mattgleich_assignments" {
   value   = "174.138.35.183"
 }
 
+resource "cloudflare_record" "mattgleich_photos" {
+  zone_id = var.zone_id_mattgleich
+  type    = "A"
+  name    = "photos"
+  value   = "174.138.35.183"
+}
+
 resource "cloudflare_record" "mattgleich_github" {
   zone_id = var.zone_id_mattgleich
   type    = "A"
