@@ -188,3 +188,10 @@ resource "cloudflare_record" "mattgleich_com_ghs_games_website" {
   name    = "ghs-games"
   value   = "76.76.21.21"
 }
+
+resource "cloudflare_record" "mattgleich_com_grad" {
+  zone_id = var.zone_id_mattgleich_com
+  type    = "A"
+  name    = "grad"
+  value   = "76.76.21.21"
+}
