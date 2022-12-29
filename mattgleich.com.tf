@@ -21,10 +21,17 @@ resource "cloudflare_record" "mattgleich_com_root_mail_backup" {
   priority = 20
 }
 
-resource "cloudflare_record" "mattgleich_com_api" {
+resource "cloudflare_record" "mattgleich_com_api_wildcard" {
   zone_id = var.zone_id_mattgleich_com
   type    = "A"
   name    = "*.api"
+  value   = "147.182.130.61"
+}
+
+resource "cloudflare_record" "mattgleich_com_api" {
+  zone_id = var.zone_id_mattgleich_com
+  type    = "A"
+  name    = "api"
   value   = "147.182.130.61"
 }
 
