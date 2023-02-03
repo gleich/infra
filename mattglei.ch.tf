@@ -160,3 +160,10 @@ resource "cloudflare_record" "mattgleich_beta" {
   name    = "beta"
   value   = "76.76.21.21"
 }
+
+resource "cloudflare_record" "mattgleich_old" {
+  zone_id = var.zone_id_mattgleich
+  type    = "A"
+  name    = "old"
+  value   = "76.76.21.21"
+}
