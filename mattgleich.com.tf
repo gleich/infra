@@ -167,10 +167,3 @@ resource "cloudflare_record" "mattgleich_com_old" {
   name    = "old"
   value   = "76.76.21.21"
 }
-
-resource "cloudflare_record" "mattgleich_com_string_slicing" {
-  zone_id = var.zone_id_mattgleich_com
-  type    = "A"
-  name    = "stringslicing"
-  value   = "76.76.21.21"
-}
