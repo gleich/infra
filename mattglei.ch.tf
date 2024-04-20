@@ -167,3 +167,11 @@ resource "cloudflare_record" "mattgleich_old" {
   name    = "old"
   value   = "76.76.21.21"
 }
+
+
+resource "cloudflare_record" "mattgleich_niranth" {
+  zone_id = var.zone_id_mattgleich
+  type    = "A"
+  name    = "niranth"
+  value   = "76.76.21.21"
+}
