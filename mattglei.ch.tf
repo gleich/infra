@@ -161,17 +161,24 @@ resource "cloudflare_record" "mattgleich_beta" {
   value   = "76.76.21.21"
 }
 
-resource "cloudflare_record" "mattgleich_old" {
-  zone_id = var.zone_id_mattgleich
-  type    = "A"
-  name    = "old"
-  value   = "76.76.21.21"
-}
-
 
 resource "cloudflare_record" "mattgleich_niranth" {
   zone_id = var.zone_id_mattgleich
   type    = "A"
   name    = "niranth"
+  value   = "76.76.21.21"
+}
+
+resource "cloudflare_record" "mattgleich_v2" {
+  zone_id = var.zone_id_mattgleich
+  type    = "A"
+  name    = "v2"
+  value   = "76.76.21.21"
+}
+
+resource "cloudflare_record" "mattgleich_v3" {
+  zone_id = var.zone_id_mattgleich
+  type    = "A"
+  name    = "v3"
   value   = "76.76.21.21"
 }
