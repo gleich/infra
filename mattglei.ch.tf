@@ -42,13 +42,6 @@ resource "cloudflare_record" "mattgleich_coolify" {
   value   = "147.182.130.61"
 }
 
-resource "cloudflare_record" "mattgleich_lcp" {
-  zone_id = var.zone_id_mattgleich
-  type    = "A"
-  name    = "lcp"
-  value   = "147.182.130.61"
-}
-
 resource "cloudflare_record" "mattgleich_www" {
   zone_id = var.zone_id_mattgleich
   type    = "A"

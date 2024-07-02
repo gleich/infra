@@ -35,13 +35,6 @@ resource "cloudflare_record" "mattgleich_com_dev" {
   value   = "147.182.130.61"
 }
 
-resource "cloudflare_record" "mattgleich_com_lcp" {
-  zone_id = var.zone_id_mattgleich_com
-  type    = "A"
-  name    = "lcp"
-  value   = "147.182.130.61"
-}
-
 resource "cloudflare_record" "mattgleich_com_from" {
   zone_id = var.zone_id_mattgleich_com
   type    = "A"
