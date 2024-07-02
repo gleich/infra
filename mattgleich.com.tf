@@ -42,13 +42,6 @@ resource "cloudflare_record" "mattgleich_com_github" {
   value   = "8.8.8.8"
 }
 
-resource "cloudflare_record" "mattgleich_com_coolify" {
-  zone_id = var.zone_id_mattgleich_com
-  type    = "A"
-  name    = "coolify.dev"
-  value   = "147.182.130.61"
-}
-
 resource "cloudflare_record" "mattgleich_com_from" {
   zone_id = var.zone_id_mattgleich_com
   type    = "A"

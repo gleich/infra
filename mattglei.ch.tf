@@ -38,7 +38,7 @@ resource "cloudflare_record" "mattgleich_dev" {
 resource "cloudflare_record" "mattgleich_coolify" {
   zone_id = var.zone_id_mattgleich
   type    = "A"
-  name    = "coolify"
+  name    = "coolify.dev"
   value   = "147.182.130.61"
 }
 
