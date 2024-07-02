@@ -35,11 +35,11 @@ resource "cloudflare_record" "mattgleich_com_dev" {
   value   = "147.182.130.61"
 }
 
-resource "cloudflare_record" "mattgleich_com_github" {
+resource "cloudflare_record" "mattgleich_com_lcp" {
   zone_id = var.zone_id_mattgleich_com
   type    = "A"
-  name    = "github"
-  value   = "8.8.8.8"
+  name    = "lcp"
+  value   = "147.182.130.61"
 }
 
 resource "cloudflare_record" "mattgleich_com_from" {
