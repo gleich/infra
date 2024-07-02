@@ -21,87 +21,31 @@ resource "cloudflare_record" "mattgleich_root_mail_backup" {
   priority = 20
 }
 
-resource "cloudflare_record" "mattgleich_api_wildcard" {
+resource "cloudflare_record" "mattgleich_dev_wildcard" {
   zone_id = var.zone_id_mattgleich
   type    = "A"
-  name    = "*.api"
+  name    = "*.dev"
   value   = "147.182.130.61"
 }
 
-resource "cloudflare_record" "mattgleich_api" {
+resource "cloudflare_record" "mattgleich_dev" {
   zone_id = var.zone_id_mattgleich
   type    = "A"
-  name    = "api"
+  name    = "dev"
   value   = "147.182.130.61"
 }
 
-resource "cloudflare_record" "mattgleich_github" {
+resource "cloudflare_record" "mattgleich_coolify" {
   zone_id = var.zone_id_mattgleich
   type    = "A"
-  name    = "github"
-  value   = "8.8.8.8"
-}
-
-resource "cloudflare_record" "mattgleich_inspiration" {
-  zone_id = var.zone_id_mattgleich
-  type    = "A"
-  name    = "inspiration"
-  value   = "8.8.8.8"
-}
-
-resource "cloudflare_record" "mattgleich_wild_school" {
-  zone_id = var.zone_id_mattgleich
-  type    = "A"
-  name    = "*.school"
-  value   = "76.76.21.21"
-}
-
-resource "cloudflare_record" "mattgleich_school" {
-  zone_id = var.zone_id_mattgleich
-  type    = "A"
-  name    = "school"
-  value   = "76.76.21.21"
-}
-
-resource "cloudflare_record" "mattgleich_ghs_store" {
-  zone_id = var.zone_id_mattgleich
-  type    = "A"
-  name    = "ghs-store"
-  value   = "76.76.21.21"
-}
-
-resource "cloudflare_record" "mattgleich_api_coolify" {
-  zone_id = var.zone_id_mattgleich
-  type    = "A"
-  name    = "coolify.api"
+  name    = "coolify"
   value   = "147.182.130.61"
-}
-
-resource "cloudflare_record" "mattgleich_linkedin" {
-  zone_id = var.zone_id_mattgleich
-  type    = "A"
-  name    = "linkedin"
-  value   = "8.8.8.8"
 }
 
 resource "cloudflare_record" "mattgleich_www" {
   zone_id = var.zone_id_mattgleich
   type    = "A"
   name    = "www"
-  value   = "76.76.21.21"
-}
-
-resource "cloudflare_record" "mattgleich_optic_docs" {
-  zone_id = var.zone_id_mattgleich
-  type    = "A"
-  name    = "optic.docs"
-  value   = "76.76.21.21"
-}
-
-resource "cloudflare_record" "mattgleich_from" {
-  zone_id = var.zone_id_mattgleich
-  type    = "A"
-  name    = "from"
   value   = "76.76.21.21"
 }
 
@@ -130,20 +74,6 @@ resource "cloudflare_record" "mattgleich_javelin" {
   zone_id = var.zone_id_mattgleich
   type    = "A"
   name    = "javelin"
-  value   = "76.76.21.21"
-}
-
-resource "cloudflare_record" "mattgleich_daily_poll_website" {
-  zone_id = var.zone_id_mattgleich
-  type    = "A"
-  name    = "daily-poll"
-  value   = "76.76.21.21"
-}
-
-resource "cloudflare_record" "mattgleich_ghs_games_website" {
-  zone_id = var.zone_id_mattgleich
-  type    = "A"
-  name    = "ghs-games"
   value   = "76.76.21.21"
 }
 
