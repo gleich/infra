@@ -70,10 +70,10 @@ resource "cloudflare_record" "mattgleich_com_ghs_store" {
   value   = "76.76.21.21"
 }
 
-resource "cloudflare_record" "mattgleich_com_api_captain" {
+resource "cloudflare_record" "mattgleich_com_api_coolify" {
   zone_id = var.zone_id_mattgleich_com
   type    = "A"
-  name    = "captain.api"
+  name    = "coolify.api"
   value   = "147.182.130.61"
 }
 
