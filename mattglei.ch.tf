@@ -44,9 +44,9 @@ resource "cloudflare_record" "mattgleich_coolify" {
 
 resource "cloudflare_record" "mattgleich_www" {
   zone_id = var.zone_id_mattgleich
-  type    = "A"
+  type    = "CNAME"
   name    = "www"
-  value   = "76.76.21.21"
+  value   = "cname.vercel-dns.com."
 }
 
 resource "cloudflare_record" "mattgleich_svg_animation_tester" {

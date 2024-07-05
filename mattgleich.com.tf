@@ -35,11 +35,11 @@ resource "cloudflare_record" "mattgleich_com_dev" {
   value   = "147.182.130.61"
 }
 
-resource "cloudflare_record" "mattgleich_com_from" {
+resource "cloudflare_record" "mattgleich_com_www" {
   zone_id = var.zone_id_mattgleich_com
-  type    = "A"
-  name    = "from"
-  value   = "76.76.21.21"
+  type    = "CNAME"
+  name    = "www"
+  value   = "cname.vercel-dns.com."
 }
 
 resource "cloudflare_record" "mattgleich_com_svg_animation_tester" {
