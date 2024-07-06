@@ -35,13 +35,6 @@ resource "cloudflare_record" "mattgleich_dev" {
   value   = "147.182.130.61"
 }
 
-resource "cloudflare_record" "mattgleich_caprover" {
-  zone_id = var.zone_id_mattgleich
-  type    = "A"
-  name    = "caprover.dev"
-  value   = "147.182.130.61"
-}
-
 resource "cloudflare_record" "mattgleich_www" {
   zone_id = var.zone_id_mattgleich
   type    = "CNAME"
