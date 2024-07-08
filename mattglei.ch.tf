@@ -105,3 +105,10 @@ resource "cloudflare_record" "mattgleich_v3" {
   name    = "v3"
   value   = "76.76.21.21"
 }
+
+resource "cloudflare_record" "mattgleich_google_search_console" {
+  zone_id = var.zone_id_mattgleich
+  type    = "TXT"
+  name    = "mattglei.ch"
+  value   = "google-site-verification=_gX7QrBjFNB1USwYWAd4Ei9svlMsmWfsCxvT6veE-OI"
+}
