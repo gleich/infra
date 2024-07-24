@@ -84,13 +84,6 @@ resource "cloudflare_record" "mattgleich_com_beta" {
   value   = "76.76.21.21"
 }
 
-resource "cloudflare_record" "mattgleich_com_niranth" {
-  zone_id = var.zone_id_mattgleich_com
-  type    = "A"
-  name    = "niranth"
-  value   = "76.76.21.21"
-}
-
 resource "cloudflare_record" "mattgleich_com_v2" {
   zone_id = var.zone_id_mattgleich_com
   type    = "A"
