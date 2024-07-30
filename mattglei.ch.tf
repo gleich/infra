@@ -99,6 +99,13 @@ resource "cloudflare_record" "mattgleich_v3" {
   value   = "76.76.21.21"
 }
 
+resource "cloudflare_record" "mattgleich_ssh" {
+  zone_id = var.zone_id_mattgleich
+  type    = "A"
+  name    = "ssh"
+  value   = "146.190.64.158"
+}
+
 resource "cloudflare_record" "mattgleich_google_search_console" {
   zone_id = var.zone_id_mattgleich
   type    = "TXT"
