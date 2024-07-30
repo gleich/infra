@@ -25,14 +25,14 @@ resource "cloudflare_record" "mattgleich_dev_wildcard" {
   zone_id = var.zone_id_mattgleich
   type    = "A"
   name    = "*.dev"
-  value   = "147.182.130.61"
+  value   = "146.190.64.158"
 }
 
 resource "cloudflare_record" "mattgleich_dev" {
   zone_id = var.zone_id_mattgleich
   type    = "A"
   name    = "dev"
-  value   = "147.182.130.61"
+  value   = "146.190.64.158"
 }
 
 resource "cloudflare_record" "mattgleich_www" {
