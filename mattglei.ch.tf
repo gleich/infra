@@ -99,10 +99,10 @@ resource "cloudflare_record" "mattgleich_v3" {
   value   = "76.76.21.21"
 }
 
-resource "cloudflare_record" "mattgleich_ssh" {
+resource "cloudflare_record" "mattgleich_terminal" {
   zone_id = var.zone_id_mattgleich
   type    = "A"
-  name    = "ssh"
+  name    = "terminal"
   value   = "146.190.64.158"
 }
 
