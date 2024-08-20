@@ -35,6 +35,20 @@ resource "cloudflare_record" "mattgleich_dev" {
   value   = "198.199.69.145"
 }
 
+resource "cloudflare_record" "mattgleich_f1dev_wildcard" {
+  zone_id = var.zone_id_mattgleich
+  type    = "A"
+  name    = "*.f1dev"
+  value   = "159.65.230.177"
+}
+
+resource "cloudflare_record" "mattgleich_f1dev" {
+  zone_id = var.zone_id_mattgleich
+  type    = "A"
+  name    = "f1dev"
+  value   = "159.65.230.177"
+}
+
 resource "cloudflare_record" "mattgleich_www" {
   zone_id = var.zone_id_mattgleich
   type    = "CNAME"
