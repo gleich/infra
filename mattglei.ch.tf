@@ -91,14 +91,6 @@ resource "cloudflare_record" "mattgleich_grad" {
   value   = "76.76.21.21"
 }
 
-resource "cloudflare_record" "mattgleich_beta" {
-  zone_id = var.zone_id_mattgleich
-  type    = "A"
-  name    = "beta"
-  value   = "76.76.21.21"
-}
-
-
 resource "cloudflare_record" "mattgleich_v2" {
   zone_id = var.zone_id_mattgleich
   type    = "A"
