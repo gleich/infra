@@ -19,6 +19,10 @@ provider "vercel" {
   api_token = var.vercel_api_token
 }
 
+module "vercel" {
+  source = "./modules/vercel"
+}
+
 module "mattgleich_dns" {
   source  = "./modules/cloudflare"
   zone_id = "b580b7998284e872e4e6d3a33aac00a8"
