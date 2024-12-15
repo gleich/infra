@@ -9,3 +9,7 @@ variable "vercel_api_token" {
 variable "digitalocean_api_token" {
   type = string
 }
+
+variable "github_api_token" {
+  type = string
+}

@@ -12,6 +12,10 @@ terraform {
       source  = "digitalocean/digitalocean"
       version = "~> 2.0"
     }
+    github = {
+      source  = "integrations/github"
+      version = "~> 6.0"
+    }
   }
 }
 
@@ -25,6 +29,10 @@ provider "vercel" {
 
 provider "digitalocean" {
   token = var.digitalocean_api_token
+}
+
+provider "github" {
+  token = var.github_api_token
 }
 
 module "mattgleich_dns" {
@@ -43,4 +51,8 @@ module "vercel" {
 
 module "digitalocean" {
   source = "./modules/digitalocean"
+}
+
+module "github" {
+  source = "./modules/github"
 }
