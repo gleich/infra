@@ -21,11 +21,3 @@ resource "cloudflare_record" "blackbird" {
   content = var.addresses.vercel
   ttl     = 1
 }
-
-resource "cloudflare_record" "newtab" {
-  zone_id = var.zone_id
-  type    = "A"
-  name    = "newtab"
-  content = var.addresses.vercel
-  ttl     = 1
-}
