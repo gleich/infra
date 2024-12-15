@@ -53,11 +53,3 @@ resource "cloudflare_record" "grad" {
   content = var.addresses.vercel
   ttl     = 1
 }
-
-resource "cloudflare_record" "v2" {
-  zone_id = var.zone_id
-  type    = "A"
-  name    = "v2"
-  content = var.addresses.vercel
-  ttl     = 1
-}
