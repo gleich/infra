@@ -10,13 +10,9 @@ resource "vercel_project" "website" {
 resource "vercel_project" "blackbird" {
   name      = "blackbird"
   framework = "nextjs"
-  git_repository = {
-    repo = "blackbirdtheme/website"
-    type = "github"
-  }
 }
 
-resource "vercel_project" "website-v2" {
+resource "vercel_project" "website_v2" {
   name      = "website-v2"
   framework = "nextjs"
   git_repository = {
