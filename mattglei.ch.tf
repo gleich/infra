@@ -1,113 +1,129 @@
-resource "cloudflare_dns_record" "mattgleich_root" {
+resource "cloudflare_record" "mattgleich_root" {
   zone_id = var.zone_id_mattgleich
   type    = "A"
   name    = ""
-  value   = "76.76.21.21"
+  content = "76.76.21.21"
+  ttl     = 1
 }
 
-resource "cloudflare_dns_record" "mattgleich_root_mail_main" {
+resource "cloudflare_record" "mattgleich_root_mail_main" {
   zone_id  = var.zone_id_mattgleich
   type     = "MX"
   name     = ""
-  value    = "mx1.improvmx.com."
+  content  = "mx1.improvmx.com."
   priority = 10
+  ttl      = 1
 }
 
-resource "cloudflare_dns_record" "mattgleich_root_mail_backup" {
+resource "cloudflare_record" "mattgleich_root_mail_backup" {
   zone_id  = var.zone_id_mattgleich
   type     = "MX"
   name     = ""
-  value    = "mx2.improvmx.com."
+  content  = "mx2.improvmx.com."
   priority = 20
+  ttl      = 1
 }
 
-resource "cloudflare_dns_record" "mattgleich_dev_wildcard" {
+resource "cloudflare_record" "mattgleich_dev_wildcard" {
   zone_id = var.zone_id_mattgleich
   type    = "A"
   name    = "*.dev"
-  value   = "198.199.69.145"
+  content = "198.199.69.145"
+  ttl     = 1
 }
 
-resource "cloudflare_dns_record" "mattgleich_dev" {
+resource "cloudflare_record" "mattgleich_dev" {
   zone_id = var.zone_id_mattgleich
   type    = "A"
   name    = "dev"
-  value   = "198.199.69.145"
+  content = "198.199.69.145"
+  ttl     = 1
 }
 
-resource "cloudflare_dns_record" "mattgleich_ritracing_wildcard" {
+resource "cloudflare_record" "mattgleich_ritracing_wildcard" {
   zone_id = var.zone_id_mattgleich
   type    = "A"
   name    = "*.ritracing"
-  value   = "159.65.230.177"
+  content = "159.65.230.177"
+  ttl     = 1
 }
 
-resource "cloudflare_dns_record" "mattgleich_ritracing" {
+resource "cloudflare_record" "mattgleich_ritracing" {
   zone_id = var.zone_id_mattgleich
   type    = "A"
   name    = "ritracing"
-  value   = "159.65.230.177"
+  content = "159.65.230.177"
+  ttl     = 1
 }
 
-resource "cloudflare_dns_record" "mattgleich_www" {
+resource "cloudflare_record" "mattgleich_www" {
   zone_id = var.zone_id_mattgleich
   type    = "CNAME"
   name    = "www"
-  value   = "cname.vercel-dns.com."
+  content = "cname.vercel-dns.com."
+  ttl     = 1
 }
 
-resource "cloudflare_dns_record" "mattgleich_svg_animation_tester" {
+resource "cloudflare_record" "mattgleich_svg_animation_tester" {
   zone_id = var.zone_id_mattgleich
   type    = "A"
   name    = "svg-animation-tester"
-  value   = "76.76.21.21"
+  content = "76.76.21.21"
+  ttl     = 1
 }
 
-resource "cloudflare_dns_record" "mattgleich_blackbird" {
+resource "cloudflare_record" "mattgleich_blackbird" {
   zone_id = var.zone_id_mattgleich
   type    = "A"
   name    = "blackbird"
-  value   = "76.76.21.21"
+  content = "76.76.21.21"
+  ttl     = 1
 }
 
-resource "cloudflare_dns_record" "mattgleich_feynman_project" {
+resource "cloudflare_record" "mattgleich_feynman_project" {
   zone_id = var.zone_id_mattgleich
   type    = "A"
   name    = "feynman-project"
-  value   = "76.76.21.21"
+  content = "76.76.21.21"
+  ttl     = 1
 }
 
-resource "cloudflare_dns_record" "mattgleich_javelin" {
+resource "cloudflare_record" "mattgleich_javelin" {
   zone_id = var.zone_id_mattgleich
   type    = "A"
   name    = "javelin"
-  value   = "76.76.21.21"
+  content = "76.76.21.21"
+  ttl     = 1
 }
 
-resource "cloudflare_dns_record" "mattgleich_grad" {
+resource "cloudflare_record" "mattgleich_grad" {
   zone_id = var.zone_id_mattgleich
   type    = "A"
   name    = "grad"
-  value   = "76.76.21.21"
+  content = "76.76.21.21"
+  ttl     = 1
 }
 
-resource "cloudflare_dns_record" "mattgleich_v2" {
+resource "cloudflare_record" "mattgleich_v2" {
   zone_id = var.zone_id_mattgleich
   type    = "A"
   name    = "v2"
-  value   = "76.76.21.21"
+  content = "76.76.21.21"
+  ttl     = 1
 }
 
-resource "cloudflare_dns_record" "mattgleich_terminal" {
+resource "cloudflare_record" "mattgleich_terminal" {
   zone_id = var.zone_id_mattgleich
   type    = "A"
   name    = "terminal"
-  value   = "198.199.69.145"
+  content = "198.199.69.145"
+  ttl     = 1
 }
 
-resource "cloudflare_dns_record" "mattgleich_google_search_console" {
+resource "cloudflare_record" "mattgleich_google_search_console" {
   zone_id = var.zone_id_mattgleich
   type    = "TXT"
   name    = "mattglei.ch"
-  value   = "google-site-verification=_gX7QrBjFNB1USwYWAd4Ei9svlMsmWfsCxvT6veE-OI"
+  content = "google-site-verification=_gX7QrBjFNB1USwYWAd4Ei9svlMsmWfsCxvT6veE-OI"
+  ttl     = 3600
 }
