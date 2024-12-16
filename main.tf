@@ -33,6 +33,7 @@ provider "digitalocean" {
 
 provider "github" {
   token = var.github_api_token
+  owner = "gleich"
 }
 
 module "mattgleich_dns" {
