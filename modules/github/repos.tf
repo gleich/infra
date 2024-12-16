@@ -809,7 +809,7 @@ resource "github_repository" "components" {
 
 resource "github_repository" "jsx" {
   name        = "jsx"
-  description = "🕸 Playing around with jsx"
+  description = "Playing around with JSX while learning react"
   visibility  = "public"
 }
 
