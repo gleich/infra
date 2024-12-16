@@ -1012,6 +1012,9 @@ resource "github_repository" "beta_website" {
   description  = "🌎 My personal website built in Flutter"
   visibility   = "public"
   homepage_url = "https://old.mattglei.ch/"
+  pages {
+    build_type = "legacy"
+  }
 }
 
 resource "github_repository" "PersonalExpensesApp" {
@@ -1121,6 +1124,9 @@ resource "github_repository" "Web_Lights_Front" {
   description  = "🌎 Control led lights through the powers of the web."
   visibility   = "public"
   homepage_url = "https://web-lights.xyz"
+  pages {
+    build_type = "legacy"
+  }
 }
 
 resource "github_repository" "Auto_Deploy_Docker" {
@@ -1207,6 +1213,9 @@ resource "github_repository" "Old_Personal_Site" {
   description  = "🌎 My personal website built with Flutter. Check it out live at:"
   visibility   = "public"
   homepage_url = "https://matt-gleich.github.io/"
+  pages {
+    build_type = "legacy"
+  }
 }
 
 resource "github_repository" "Django_Lessons" {
