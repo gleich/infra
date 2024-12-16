@@ -1014,6 +1014,10 @@ resource "github_repository" "beta_website" {
   homepage_url = "https://old.mattglei.ch/"
   pages {
     build_type = "legacy"
+    source {
+      branch = "master"
+      path   = "/"
+    }
   }
 }
 
@@ -1126,6 +1130,10 @@ resource "github_repository" "Web_Lights_Front" {
   homepage_url = "https://web-lights.xyz"
   pages {
     build_type = "legacy"
+    source {
+      branch = "master"
+      path   = "/"
+    }
   }
 }
 
@@ -1215,6 +1223,10 @@ resource "github_repository" "Old_Personal_Site" {
   homepage_url = "https://matt-gleich.github.io/"
   pages {
     build_type = "legacy"
+    source {
+      branch = "master"
+      path   = "/"
+    }
   }
 }
 
