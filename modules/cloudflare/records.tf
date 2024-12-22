@@ -44,14 +44,6 @@ resource "cloudflare_record" "blackbird" {
   ttl     = 1
 }
 
-resource "cloudflare_record" "beta" {
-  zone_id = var.zone_id
-  type    = "A"
-  name    = "beta"
-  content = var.addresses.vercel
-  ttl     = 1
-}
-
 ##################
 # SERVER RECORDS #
 ##################
