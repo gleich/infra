@@ -8,4 +8,3 @@ Infrastructure configuration with [Terraform](https://www.terraform.io). The fol
 1. [Cloudflare DNS Records](./modules/cloudflare/)
 2. [Vercel Projects](./modules/vercel/)
 3. [Digitalocean Droplets (VMs)](./modules/digitalocean/)
-4. [GitHub Repositories](./modules/github/)
