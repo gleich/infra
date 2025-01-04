@@ -16,6 +16,14 @@ resource "cloudflare_record" "root_mail_backup" {
   ttl      = 1
 }
 
+resource "cloudflare_record" "root_mail_spf" {
+  zone_id = var.zone_id
+  type    = "TXT"
+  name    = "@"
+  content = "v=spf1 include:spf.improvmx.com ~all"
+  ttl     = 1
+}
+
 ##################
 # VERCEL RECORDS #
 ##################
