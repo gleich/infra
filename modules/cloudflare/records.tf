@@ -79,3 +79,11 @@ resource "cloudflare_record" "terminal" {
   content = var.addresses.server
   ttl     = 1
 }
+
+resource "cloudflare_record" "pkg" {
+  zone_id = var.zone_id
+  type    = "A"
+  name    = "pkg"
+  content = var.addresses.server
+  ttl     = 1
+}
