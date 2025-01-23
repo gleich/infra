@@ -24,6 +24,14 @@ resource "cloudflare_record" "root_mail_spf" {
   ttl     = 1
 }
 
+resource "cloudflare_record" "status" {
+  zone_id = var.zone_id
+  type    = "CNAME"
+  name    = "status"
+  content = "statuspage.betteruptime.com"
+  ttl     = 1
+}
+
 ##################
 # VERCEL RECORDS #
 ##################
