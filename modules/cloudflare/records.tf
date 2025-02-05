@@ -88,10 +88,10 @@ resource "cloudflare_record" "pkg" {
   ttl     = 1
 }
 
-resource "cloudflare_record" "registry" {
+resource "cloudflare_record" "docker" {
   zone_id = var.zone_id
   type    = "A"
-  name    = "registry"
+  name    = "docker"
   content = var.addresses.server
   ttl     = 1
 }
