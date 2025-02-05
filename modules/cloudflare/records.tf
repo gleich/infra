@@ -87,3 +87,11 @@ resource "cloudflare_record" "pkg" {
   content = var.addresses.server
   ttl     = 1
 }
+
+resource "cloudflare_record" "registry" {
+  zone_id = var.zone_id
+  type    = "A"
+  name    = "registry"
+  content = var.addresses.server
+  ttl     = 1
+}
