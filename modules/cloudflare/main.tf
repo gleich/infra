@@ -13,7 +13,7 @@ module "coverframe_dev_dns" {
   zone_id = "273ba96ea009fff540bf1809d0cfdda8"
 }
 
-module "coverframe_dev_dns" {
+module "coverframe_shop_dns" {
   source  = "./coverframe"
   zone_id = "bacf7227ff8abdbb5e44310d60fd6ffe"
 }
