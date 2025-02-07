@@ -30,7 +30,7 @@ resource "cloudflare_record" "root_mail_spf" {
 
 resource "cloudflare_record" "root" {
   zone_id = var.zone_id
-  type    = "CNAME"
+  type    = "A"
   name    = "@"
   content = var.addresses.vercel
   ttl     = 1
@@ -38,7 +38,7 @@ resource "cloudflare_record" "root" {
 
 resource "cloudflare_record" "www" {
   zone_id = var.zone_id
-  type    = "CNAME"
+  type    = "A"
   name    = "www"
   content = var.addresses.vercel
   ttl     = 1
@@ -46,7 +46,7 @@ resource "cloudflare_record" "www" {
 
 resource "cloudflare_record" "blackbird" {
   zone_id = var.zone_id
-  type    = "CNAME"
+  type    = "A"
   name    = "blackbird"
   content = var.addresses.vercel
   ttl     = 1

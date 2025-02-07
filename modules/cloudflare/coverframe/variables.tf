@@ -4,7 +4,7 @@ variable "zone_id" {
 
 variable "addresses" {
   default = {
-    vercel = "cname.vercel-dns.com."
+    vercel = "76.76.21.21"
   }
   type = object({
     vercel = string
