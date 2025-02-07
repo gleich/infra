@@ -27,14 +27,8 @@ provider "digitalocean" {
   token = var.digitalocean_api_token
 }
 
-module "mattgleich_dns" {
-  source  = "./modules/cloudflare"
-  zone_id = "b580b7998284e872e4e6d3a33aac00a8"
-}
-
-module "mattgleich_com_dns" {
-  source  = "./modules/cloudflare"
-  zone_id = "0321ab5a32959ab44e02ba727bae8106"
+module "cloudflare" {
+  source = "./modules/cloudflare"
 }
 
 module "vercel" {
