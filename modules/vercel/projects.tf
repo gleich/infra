@@ -14,7 +14,7 @@ resource "vercel_project" "coverframe" {
     repo = "gleich/coverframe"
     type = "github"
   }
-  root_directory = "./website"
+  root_directory = "website"
 }
 
 resource "vercel_project" "blackbird" {
