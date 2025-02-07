@@ -5,7 +5,7 @@ module "mattgleich_dns" {
 
 module "mattgleich_com_dns" {
   source  = "./personal"
-  zone_id = "b580b7998284e872e4e6d3a33aac00a8"
+  zone_id = "0321ab5a32959ab44e02ba727bae8106"
 }
 
 module "coverframe_dev_dns" {
