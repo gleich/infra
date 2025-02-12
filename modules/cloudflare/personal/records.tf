@@ -80,10 +80,10 @@ resource "cloudflare_record" "terminal" {
   ttl     = 1
 }
 
-resource "cloudflare_record" "pkg" {
+resource "cloudflare_record" "go" {
   zone_id = var.zone_id
   type    = "A"
-  name    = "pkg"
+  name    = "go"
   content = var.addresses.server
   ttl     = 1
 }
