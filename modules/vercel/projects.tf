@@ -7,6 +7,15 @@ resource "vercel_project" "website" {
   }
 }
 
+resource "vercel_project" "website5" {
+  name      = "website5"
+  framework = "sveltekit"
+  git_repository = {
+    repo = "gleich/website5"
+    type = "github"
+  }
+}
+
 resource "vercel_project" "coverframe" {
   name           = "coverframe"
   framework      = "nextjs"
