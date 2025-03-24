@@ -46,9 +46,9 @@ resource "cloudflare_record" "www" {
 
 resource "cloudflare_record" "beta" {
   zone_id = var.zone_id
-  type    = "A"
+  type    = "CNAME"
   name    = "beta"
-  content = var.addresses.vercel
+  content = "mattglei-ch.pages.dev"
   ttl     = 1
 }
 
