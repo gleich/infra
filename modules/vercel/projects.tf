@@ -8,7 +8,7 @@ resource "vercel_project" "website" {
 }
 
 resource "vercel_project" "website5" {
-  name      = "mattglei.ch"
+  name      = "beta"
   framework = "sveltekit"
   git_repository = {
     repo = "gleich/mattglei.ch"
