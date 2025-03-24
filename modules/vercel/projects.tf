@@ -8,10 +8,10 @@ resource "vercel_project" "website" {
 }
 
 resource "vercel_project" "website5" {
-  name      = "website5"
+  name      = "mattglei.ch"
   framework = "sveltekit"
   git_repository = {
-    repo = "gleich/website5"
+    repo = "gleich/mattglei.ch"
     type = "github"
   }
 }
