@@ -1,5 +1,5 @@
 resource "vercel_project" "website5" {
-  name      = "mattglei.ch"
+  name      = "mattgleich"
   framework = "sveltekit"
   git_repository = {
     repo = "gleich/mattglei.ch"
