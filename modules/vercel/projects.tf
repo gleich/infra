@@ -1,14 +1,5 @@
-resource "vercel_project" "website" {
-  name      = "website"
-  framework = "nextjs"
-  git_repository = {
-    repo = "gleich/website"
-    type = "github"
-  }
-}
-
 resource "vercel_project" "website5" {
-  name      = "beta"
+  name      = "mattglei.ch"
   framework = "sveltekit"
   git_repository = {
     repo = "gleich/mattglei.ch"
