@@ -44,6 +44,14 @@ resource "cloudflare_record" "www" {
   ttl     = 1
 }
 
+resource "cloudflare_record" "notes" {
+  zone_id = var.zone_id
+  type    = "A"
+  name    = "notes"
+  content = var.addresses.vercel
+  ttl     = 1
+}
+
 resource "cloudflare_record" "blackbird" {
   zone_id = var.zone_id
   type    = "A"

@@ -17,6 +17,15 @@ resource "vercel_project" "coverframe" {
   }
 }
 
+resource "vercel_project" "notes" {
+  name      = "notes"
+  framework = "sveltekit"
+  git_repository = {
+    repo = "gleich/notes"
+    type = "github"
+  }
+}
+
 resource "vercel_project" "blackbird" {
   name      = "blackbird"
   framework = "nextjs"
