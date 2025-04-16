@@ -7,6 +7,15 @@ resource "vercel_project" "website5" {
   }
 }
 
+resource "vercel_project" "pomo" {
+  name      = "pomo"
+  framework = "sveltekit-1"
+  git_repository = {
+    repo = "gleich/pomo"
+    type = "github"
+  }
+}
+
 resource "vercel_project" "coverframe" {
   name           = "coverframe"
   framework      = "nextjs"
