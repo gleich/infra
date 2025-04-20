@@ -16,6 +16,15 @@ resource "vercel_project" "pomo" {
   }
 }
 
+resource "vercel_project" "ui" {
+  name      = "ui"
+  framework = "sveltekit-1"
+  git_repository = {
+    repo = "gleich/ui"
+    type = "github"
+  }
+}
+
 resource "vercel_project" "coverframe" {
   name           = "coverframe"
   framework      = "nextjs"

@@ -52,6 +52,14 @@ resource "cloudflare_record" "pomo" {
   ttl     = 1
 }
 
+resource "cloudflare_record" "ui" {
+  zone_id = var.zone_id
+  type    = "A"
+  name    = "ui"
+  content = var.addresses.vercel
+  ttl     = 1
+}
+
 resource "cloudflare_record" "notes" {
   zone_id = var.zone_id
   type    = "A"
