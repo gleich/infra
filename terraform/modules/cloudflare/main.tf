@@ -1,3 +1,12 @@
+terraform {
+  required_providers {
+    cloudflare = {
+      source  = "cloudflare/cloudflare"
+      version = "~> 4.0"
+    }
+  }
+}
+
 module "mattgleich_dns" {
   source  = "./personal"
   zone_id = "b580b7998284e872e4e6d3a33aac00a8"
