@@ -6,8 +6,11 @@ on:
       - main
 
 jobs:
-  deploy:
+  terraform:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./terraform
     steps:
       - uses: actions/checkout@v4
       - uses: hashicorp/setup-terraform@v1
