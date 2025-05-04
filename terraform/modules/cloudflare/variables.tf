@@ -5,5 +5,5 @@ variable "account_id" {
 
 variable "svelte_kit_destination_dir" {
   type    = string
-  default = ".svelte-kit/cloudflare"
+  default = "/.svelte-kit/cloudflare"
 }
