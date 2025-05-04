@@ -30,9 +30,9 @@ resource "cloudflare_record" "root_mail_spf" {
 
 resource "cloudflare_record" "root" {
   zone_id = var.zone_id
-  type    = "A"
+  type    = "CNAME"
   name    = "@"
-  content = var.addresses.vercel
+  content = "mattglei-ch.pages.dev"
   ttl     = 1
 }
 
