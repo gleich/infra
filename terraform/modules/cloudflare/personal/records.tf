@@ -33,14 +33,7 @@ resource "cloudflare_record" "root" {
   type    = "CNAME"
   name    = "@"
   content = "mattglei-ch.pages.dev"
-  ttl     = 1
-}
-
-resource "cloudflare_record" "www" {
-  zone_id = var.zone_id
-  type    = "A"
-  name    = "www"
-  content = var.addresses.vercel
+  proxied = true
   ttl     = 1
 }
 
