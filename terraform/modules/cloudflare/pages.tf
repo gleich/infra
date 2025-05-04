@@ -4,6 +4,7 @@ resource "cloudflare_pages_project" "mattglei_ch" {
   production_branch = "main"
   build_config {
     build_caching   = true
+    build_command   = "npm run build"
     destination_dir = var.svelte_kit_destination_dir
   }
   source {
