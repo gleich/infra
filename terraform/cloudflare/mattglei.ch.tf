@@ -11,6 +11,24 @@ resource "cloudflare_dns_record" "mattgleich_blackbird" {
   zone_id = local.mattgleich_zone
 }
 
+resource "cloudflare_dns_record" "mattgleich_lab" {
+  content = "5.161.73.129"
+  name    = "lab.mattglei.ch"
+  proxied = false
+  ttl     = 1
+  type    = "A"
+  zone_id = local.mattgleich_zone
+}
+
+resource "cloudflare_dns_record" "mattgleich_lab_wildcard" {
+  content = "5.161.73.129"
+  name    = "*.lab.mattglei.ch"
+  proxied = false
+  ttl     = 1
+  type    = "A"
+  zone_id = local.mattgleich_zone
+}
+
 resource "cloudflare_dns_record" "mattgleich_dev_wildcard" {
   content = "165.227.89.82"
   name    = "*.dev.mattglei.ch"
