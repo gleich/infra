@@ -1,0 +1,3 @@
+module "cloudflare" {
+  source = "./cloudflare"
+}
