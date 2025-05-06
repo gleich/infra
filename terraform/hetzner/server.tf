@@ -7,4 +7,5 @@ resource "hcloud_server" "lab" {
   image       = "ubuntu-24.04"
   ssh_keys    = ["macbook pro"]
   datacenter  = "ash-dc1"
+  backups     = true
 }
