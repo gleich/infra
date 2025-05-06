@@ -1,0 +1,7 @@
+{
+	email email@mattglei.ch
+}
+
+portainer.lab.mattglei.ch {
+	reverse_proxy portainer:9000
+}
