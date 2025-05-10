@@ -48,7 +48,7 @@ resource "cloudflare_dns_record" "mattgleich_dev" {
 }
 
 resource "cloudflare_dns_record" "mattgleich_docker" {
-  content = "165.227.89.82"
+  content = "5.161.73.129"
   name    = "docker.mattglei.ch"
   proxied = false
   ttl     = 1
