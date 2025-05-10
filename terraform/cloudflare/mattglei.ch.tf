@@ -2,15 +2,6 @@ locals {
   mattgleich_zone = "0321ab5a32959ab44e02ba727bae8106"
 }
 
-resource "cloudflare_dns_record" "mattgleich_blackbird" {
-  content = "76.76.21.21"
-  name    = "blackbird.mattglei.ch"
-  proxied = false
-  ttl     = 1
-  type    = "A"
-  zone_id = local.mattgleich_zone
-}
-
 resource "cloudflare_dns_record" "mattgleich_lab" {
   content = "5.161.73.129"
   name    = "lab.mattglei.ch"
