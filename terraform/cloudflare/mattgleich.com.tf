@@ -2,12 +2,12 @@ locals {
   mattgleich_com_zone = "b580b7998284e872e4e6d3a33aac00a8"
 }
 
-# +++++++++++++++++++
-# GENERAL DNS RECORDS
-# +++++++++++++++++++
+# ++++++++++++++++
+# CLOUDFLARE RULES
+# ++++++++++++++++
 
 resource "cloudflare_dns_record" "mattgleich_com_wildcard" {
-  content = "192.0.2.1"
+  content = cloudflare_address
   name    = "*.mattgleich.com"
   proxied = true
   ttl     = 1
@@ -16,7 +16,7 @@ resource "cloudflare_dns_record" "mattgleich_com_wildcard" {
 }
 
 resource "cloudflare_dns_record" "mattgleich_com_root" {
-  content = "192.0.2.1"
+  content = cloudflare_address
   name    = "mattgleich.com"
   proxied = true
   ttl     = 1
@@ -24,9 +24,9 @@ resource "cloudflare_dns_record" "mattgleich_com_root" {
   zone_id = local.mattgleich_com_zone
 }
 
-# +++++++++++++++++
-# EMAIL DNS RECORDS
-# +++++++++++++++++
+# +++++
+# EMAIL
+# +++++
 
 resource "cloudflare_dns_record" "mattgleich_com_mail" {
   content  = "mx1.improvmx.com"
