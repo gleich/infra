@@ -1,8 +1,8 @@
 locals {
   mattgleich_zone = "0321ab5a32959ab44e02ba727bae8106"
 
-  lab_address        = lab_address
-  cloudflare_address = cloudflare_address
+  lab_address        = "5.161.73.129"
+  cloudflare_address = "192.0.2.1"
 }
 
 # ++++++++++++++++
