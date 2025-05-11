@@ -3,7 +3,7 @@ terraform {
     bucket = "terraform"
     key    = "state.tfstate"
     endpoints = {
-      s3 = "https://minio-api.dev.mattglei.ch"
+      s3 = "https://minio-api.lab.mattglei.ch"
     }
 
     region                      = "main"
