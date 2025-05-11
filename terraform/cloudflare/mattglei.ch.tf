@@ -57,7 +57,7 @@ resource "cloudflare_dns_record" "mattgleich_lcp" {
 }
 
 resource "cloudflare_dns_record" "mattgleich_go" {
-  content = "165.227.89.82"
+  content = "5.161.73.129"
   name    = "go.mattglei.ch"
   proxied = false
   ttl     = 1
@@ -66,7 +66,7 @@ resource "cloudflare_dns_record" "mattgleich_go" {
 }
 
 resource "cloudflare_dns_record" "mattgleich_terminal" {
-  content = "165.227.89.82"
+  content = "5.161.73.129"
   name    = "terminal.mattglei.ch"
   proxied = false
   ttl     = 1
