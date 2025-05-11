@@ -10,7 +10,7 @@ locals {
 # ++++++++++++++++
 
 resource "cloudflare_dns_record" "mattgleich_www" {
-  content = cloudflare_address
+  content = local.cloudflare_address
   name    = "www.mattglei.ch"
   proxied = true
   ttl     = 1
@@ -23,7 +23,7 @@ resource "cloudflare_dns_record" "mattgleich_www" {
 # ++++++++++
 
 resource "cloudflare_dns_record" "mattgleich_lab" {
-  content = lab_address
+  content = local.lab_address
   name    = "lab.mattglei.ch"
   proxied = false
   ttl     = 1
@@ -32,7 +32,7 @@ resource "cloudflare_dns_record" "mattgleich_lab" {
 }
 
 resource "cloudflare_dns_record" "mattgleich_lab_wildcard" {
-  content = lab_address
+  content = local.lab_address
   name    = "*.lab.mattglei.ch"
   proxied = false
   ttl     = 1
@@ -41,7 +41,7 @@ resource "cloudflare_dns_record" "mattgleich_lab_wildcard" {
 }
 
 resource "cloudflare_dns_record" "mattgleich_docker" {
-  content = lab_address
+  content = local.lab_address
   name    = "docker.mattglei.ch"
   proxied = false
   ttl     = 1
@@ -50,7 +50,7 @@ resource "cloudflare_dns_record" "mattgleich_docker" {
 }
 
 resource "cloudflare_dns_record" "mattgleich_lcp" {
-  content = lab_address
+  content = local.lab_address
   name    = "lcp.mattglei.ch"
   proxied = false
   ttl     = 1
@@ -59,7 +59,7 @@ resource "cloudflare_dns_record" "mattgleich_lcp" {
 }
 
 resource "cloudflare_dns_record" "mattgleich_go" {
-  content = lab_address
+  content = local.lab_address
   name    = "go.mattglei.ch"
   proxied = false
   ttl     = 1
@@ -68,7 +68,7 @@ resource "cloudflare_dns_record" "mattgleich_go" {
 }
 
 resource "cloudflare_dns_record" "mattgleich_terminal" {
-  content = lab_address
+  content = local.lab_address
   name    = "terminal.mattglei.ch"
   proxied = false
   ttl     = 1

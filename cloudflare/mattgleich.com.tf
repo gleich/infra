@@ -7,7 +7,7 @@ locals {
 # ++++++++++++++++
 
 resource "cloudflare_dns_record" "mattgleich_com_wildcard" {
-  content = cloudflare_address
+  content = local.cloudflare_address
   name    = "*.mattgleich.com"
   proxied = true
   ttl     = 1
@@ -16,7 +16,7 @@ resource "cloudflare_dns_record" "mattgleich_com_wildcard" {
 }
 
 resource "cloudflare_dns_record" "mattgleich_com_root" {
-  content = cloudflare_address
+  content = local.cloudflare_address
   name    = "mattgleich.com"
   proxied = true
   ttl     = 1

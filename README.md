@@ -1,3 +1,5 @@
 # infra
 
-Provisioning (powered by [Terraform](https://developer.hashicorp.com/terraform)) and configuration management (powered by [Ansible](https://www.redhat.com/en/ansible-collaborative)) for my personal infrastructure.
+[![terraform](https://github.com/gleich/infra/actions/workflows/terraform.yml/badge.svg)](https://github.com/gleich/infra/actions/workflows/terraform.yml)
+
+Provisioning (powered by [Terraform](https://developer.hashicorp.com/terraform)) for my personal infrastructure.
