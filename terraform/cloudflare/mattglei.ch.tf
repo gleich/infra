@@ -20,24 +20,6 @@ resource "cloudflare_dns_record" "mattgleich_lab_wildcard" {
   zone_id = local.mattgleich_zone
 }
 
-resource "cloudflare_dns_record" "mattgleich_dev_wildcard" {
-  content = "165.227.89.82"
-  name    = "*.dev.mattglei.ch"
-  proxied = false
-  ttl     = 1
-  type    = "A"
-  zone_id = local.mattgleich_zone
-}
-
-resource "cloudflare_dns_record" "mattgleich_dev" {
-  content = "165.227.89.82"
-  name    = "dev.mattglei.ch"
-  proxied = false
-  ttl     = 1
-  type    = "A"
-  zone_id = local.mattgleich_zone
-}
-
 resource "cloudflare_dns_record" "mattgleich_docker" {
   content = "5.161.73.129"
   name    = "docker.mattglei.ch"
