@@ -43,7 +43,7 @@ resource "cloudflare_dns_record" "mattgleich_lab_wildcard" {
 resource "cloudflare_dns_record" "mattgleich_docker" {
   content = local.lab_address
   name    = "docker.mattglei.ch"
-  proxied = false
+  proxied = true
   ttl     = 1
   type    = "A"
   zone_id = local.mattgleich_zone
@@ -52,7 +52,7 @@ resource "cloudflare_dns_record" "mattgleich_docker" {
 resource "cloudflare_dns_record" "mattgleich_lcp" {
   content = local.lab_address
   name    = "lcp.mattglei.ch"
-  proxied = false
+  proxied = true
   ttl     = 1
   type    = "A"
   zone_id = local.mattgleich_zone
@@ -70,7 +70,7 @@ resource "cloudflare_dns_record" "mattgleich_go" {
 resource "cloudflare_dns_record" "mattgleich_terminal" {
   content = local.lab_address
   name    = "terminal.mattglei.ch"
-  proxied = false
+  proxied = true
   ttl     = 1
   type    = "A"
   zone_id = local.mattgleich_zone
