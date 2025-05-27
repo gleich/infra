@@ -76,10 +76,10 @@ resource "cloudflare_dns_record" "mattgleich_terminal" {
   zone_id = local.mattgleich_zone
 }
 
-resource "cloudflare_dns_record" "mattgleich_storage" {
+resource "cloudflare_dns_record" "mattgleich_s3" {
   content = local.lab_address
-  name    = "storage.mattglei.ch"
-  proxied = true
+  name    = "s3.mattglei.ch"
+  proxied = false
   ttl     = 1
   type    = "A"
   zone_id = local.mattgleich_zone
