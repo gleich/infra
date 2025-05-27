@@ -76,6 +76,15 @@ resource "cloudflare_dns_record" "mattgleich_terminal" {
   zone_id = local.mattgleich_zone
 }
 
+resource "cloudflare_dns_record" "mattgleich_s3" {
+  content = local.lab_address
+  name    = "s3.mattglei.ch"
+  proxied = true
+  ttl     = 1
+  type    = "A"
+  zone_id = local.mattgleich_zone
+}
+
 # ++++++++++++++++
 # CLOUDFLARE PAGES
 # ++++++++++++++++
