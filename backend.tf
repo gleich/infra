@@ -2,11 +2,12 @@ terraform {
   backend "s3" {
     bucket = "terraform"
     key    = "state.tfstate"
+
+    region = "us-east-1"
     endpoints = {
-      s3 = "https://s3.mattglei.ch"
+      s3 = "https://minio-api.lab.mattglei.ch"
     }
 
-    region                      = "main"
     skip_credentials_validation = true
     skip_requesting_account_id  = true
     skip_metadata_api_check     = true
