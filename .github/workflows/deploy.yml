@@ -1,4 +1,4 @@
-name: terraform
+name: deploy
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  apply:
+  terraform:
     runs-on: ubuntu-latest
     env:
       AWS_ENDPOINT_URL_S3: https://minio-api.dev.mattglei.ch
