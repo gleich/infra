@@ -5,9 +5,15 @@ on:
   - pull_request
 
 jobs:
-  terraform:
+  format:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: hashicorp/setup-terraform@v1
       - run: terraform fmt -check
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: hashicorp/setup-terraform@v1
+      - run: terraform validate
