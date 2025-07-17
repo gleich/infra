@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: hashicorp/setup-terraform@v1
+      - uses: hashicorp/setup-terraform@v3.1.2
       - run: terraform fmt -check -recursive
   validate:
     runs-on: ubuntu-latest
@@ -20,6 +20,6 @@ jobs:
       HCLOUD_TOKEN: ${{ secrets.HETZNER_API_TOKEN }}
     steps:
       - uses: actions/checkout@v4
-      - uses: hashicorp/setup-terraform@v1
+      - uses: hashicorp/setup-terraform@v3.1.2
       - run: terraform init -input=false -upgrade
       - run: terraform validate
