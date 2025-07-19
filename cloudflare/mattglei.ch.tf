@@ -70,7 +70,7 @@ resource "cloudflare_dns_record" "mattgleich_go" {
 resource "cloudflare_dns_record" "mattgleich_terminal" {
   content = local.lab_address
   name    = "terminal.mattglei.ch"
-  proxied = true
+  proxied = false
   ttl     = 1
   type    = "A"
   zone_id = local.mattgleich_zone
