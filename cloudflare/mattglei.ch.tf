@@ -125,6 +125,15 @@ resource "cloudflare_dns_record" "mattgleich_ui" {
   zone_id = local.mattgleich_zone
 }
 
+resource "cloudflare_dns_record" "mattgleich_split" {
+  content = "split-b5l.pages.dev"
+  name    = "split"
+  proxied = true
+  ttl     = 1
+  type    = "CNAME"
+  zone_id = local.mattgleich_zone
+}
+
 # +++++
 # EMAIL
 # +++++
