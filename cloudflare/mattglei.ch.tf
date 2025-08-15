@@ -3,6 +3,7 @@ locals {
 
   lab_address        = "5.161.73.129"
   cloudflare_address = "192.0.2.1"
+  vercel_address     = "216.198.79.1"
 }
 
 # ++++++++++++++++
@@ -90,11 +91,11 @@ resource "cloudflare_dns_record" "mattgleich_s3" {
 # ++++++++++++++++
 
 resource "cloudflare_dns_record" "mattgleich_root" {
-  content = "mattglei-ch.pages.dev"
+  content = local.cloudflare_address
   name    = "mattglei.ch"
-  proxied = true
+  proxied = false
   ttl     = 1
-  type    = "CNAME"
+  type    = "A"
   zone_id = local.mattgleich_zone
 }
 
