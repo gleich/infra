@@ -86,18 +86,22 @@ resource "cloudflare_dns_record" "mattgleich_s3" {
   zone_id = local.mattgleich_zone
 }
 
-# ++++++++++++++++
-# CLOUDFLARE PAGES
-# ++++++++++++++++
+# ++++++
+# VERCEL
+# ++++++
 
 resource "cloudflare_dns_record" "mattgleich_root" {
-  content = local.cloudflare_address
-  name    = "mattglei.ch"
+  content = local.vercel_address
+  name    = "@"
   proxied = false
   ttl     = 1
   type    = "A"
   zone_id = local.mattgleich_zone
 }
+
+# ++++++++++++++++
+# CLOUDFLARE PAGES
+# ++++++++++++++++
 
 resource "cloudflare_dns_record" "mattgleich_notes" {
   content = "notes-cpl.pages.dev"
