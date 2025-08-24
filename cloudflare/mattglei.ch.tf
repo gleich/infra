@@ -86,24 +86,6 @@ resource "cloudflare_dns_record" "mattgleich_s3" {
   zone_id = local.mattgleich_zone
 }
 
-# ++++++++++++++++++
-# CLOUDFLARE WORKERS
-# ++++++++++++++++++
-
-resource "cloudflare_workers_script" "mattgleich" {
-  script_name = "mattgleich"
-  account_id  = local.cloudflare_account_id
-  content     = file("${path.module}/worker.js")
-}
-
-resource "cloudflare_workers_custom_domain" "apex" {
-  account_id  = locals.cloudflare_account_id
-  zone_id     = local.mattgleich_zone
-  hostname    = "mattglei.ch"
-  service     = cloudflare_workers_script.mattgleich.name
-  environment = "production"
-}
-
 # ++++++++++++++++
 # CLOUDFLARE PAGES
 # ++++++++++++++++
