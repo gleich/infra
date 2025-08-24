@@ -86,46 +86,6 @@ resource "cloudflare_dns_record" "mattgleich_s3" {
   zone_id = local.mattgleich_zone
 }
 
-# ++++++++++++++++
-# CLOUDFLARE PAGES
-# ++++++++++++++++
-
-resource "cloudflare_dns_record" "mattgleich_notes" {
-  content = "notes-cpl.pages.dev"
-  name    = "notes.mattglei.ch"
-  proxied = true
-  ttl     = 1
-  type    = "CNAME"
-  zone_id = local.mattgleich_zone
-}
-
-resource "cloudflare_dns_record" "mattgleich_pomo" {
-  content = "pomo-4wo.pages.dev"
-  name    = "pomo.mattglei.ch"
-  proxied = true
-  ttl     = 1
-  type    = "CNAME"
-  zone_id = local.mattgleich_zone
-}
-
-resource "cloudflare_dns_record" "mattgleich_ui" {
-  content = "ui-dg3.pages.dev"
-  name    = "ui.mattglei.ch"
-  proxied = true
-  ttl     = 1
-  type    = "CNAME"
-  zone_id = local.mattgleich_zone
-}
-
-resource "cloudflare_dns_record" "mattgleich_split" {
-  content = "split-b5l.pages.dev"
-  name    = "split"
-  proxied = true
-  ttl     = 1
-  type    = "CNAME"
-  zone_id = local.mattgleich_zone
-}
-
 # +++++
 # EMAIL
 # +++++
