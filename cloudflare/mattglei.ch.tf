@@ -1,5 +1,6 @@
 locals {
-  mattgleich_zone = "0321ab5a32959ab44e02ba727bae8106"
+  mattgleich_zone       = "0321ab5a32959ab44e02ba727bae8106"
+  cloudflare_account_id = "3f7f98672d2906c5003891a14713aada"
 
   lab_address        = "5.161.73.129"
   cloudflare_address = "192.0.2.1"
@@ -89,13 +90,18 @@ resource "cloudflare_dns_record" "mattgleich_s3" {
 # CLOUDFLARE WORKERS
 # ++++++++++++++++++
 
-resource "cloudflare_dns_record" "mattgleich_root" {
-  content = "mattgleich"
-  name    = "mattglei.ch"
-  proxied = true
-  ttl     = 1
-  type    = "Worker"
-  zone_id = local.mattgleich_zone
+resource "cloudflare_workers_script" "mattgleich" {
+  script_name = "mattgleich"
+  account_id  = local.cloudflare_account_id
+  content     = file("${path.module}/worker.js")
+}
+
+resource "cloudflare_workers_custom_domain" "apex" {
+  account_id  = locals.cloudflare_account_id
+  zone_id     = local.mattgleich_zone
+  hostname    = "mattglei.ch"
+  service     = cloudflare_workers_script.mattgleich.name
+  environment = "production"
 }
 
 # ++++++++++++++++
