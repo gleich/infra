@@ -53,7 +53,7 @@ resource "cloudflare_dns_record" "mattgleich_docker" {
 resource "cloudflare_dns_record" "mattgleich_lcp" {
   content = local.lab_address
   name    = "lcp.mattglei.ch"
-  proxied = false
+  proxied = true
   ttl     = 1
   type    = "A"
   zone_id = local.mattgleich_zone
