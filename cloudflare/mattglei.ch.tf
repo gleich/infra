@@ -99,6 +99,15 @@ resource "cloudflare_dns_record" "mattgleich_s3" {
   zone_id = local.mattgleich_zone
 }
 
+resource "cloudflare_dns_record" "mattgleich_recipes" {
+  content = local.lab_address
+  name    = "recipes.mattglei.ch"
+  proxied = true
+  ttl     = 1
+  type    = "A"
+  zone_id = local.mattgleich_zone
+}
+
 # +++++
 # EMAIL
 # +++++
