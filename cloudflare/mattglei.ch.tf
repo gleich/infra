@@ -6,19 +6,6 @@ locals {
   cloudflare_address = "192.0.2.1"
 }
 
-# ++++++++++++++++++
-# CLOUDFLARE TUNNELS
-# ++++++++++++++++++
-
-resource "cloudflare_dns_record" "mattgleich_deskpi" {
-  content = "b8c12c91-ed47-44c3-9bf0-d5322574abeb.cfargotunnel.com"
-  name    = "deskpi.mattglei.ch"
-  proxied = true
-  ttl     = 1
-  type    = "CNAME"
-  zone_id = local.mattgleich_zone
-}
-
 # ++++++++++++++++
 # CLOUDFLARE RULES
 # ++++++++++++++++
