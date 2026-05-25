@@ -28,3 +28,12 @@ resource "cloudflare_dns_record" "gleichtv_request" {
   type    = "A"
   zone_id = local.gleichtv_zone
 }
+
+resource "cloudflare_dns_record" "gleichtv_index" {
+  content = local.lab_address
+  name    = "index.gleich.tv"
+  proxied = false
+  ttl     = 1
+  type    = "A"
+  zone_id = local.gleichtv_zone
+}
