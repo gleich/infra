@@ -89,7 +89,7 @@ resource "cloudflare_dns_record" "mattgleich_s3" {
 resource "cloudflare_dns_record" "mattgleich_recipes" {
   content = local.lab_address
   name    = "recipes.mattglei.ch"
-  proxied = true
+  proxied = false
   ttl     = 1
   type    = "A"
   zone_id = local.mattgleich_zone
